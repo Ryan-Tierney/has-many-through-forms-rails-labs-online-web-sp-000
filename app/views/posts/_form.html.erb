@@ -22,8 +22,8 @@
 		<% end %>
 
 		<!-- Add a form for a New Category -->
-		<%= f.fields_for :categories do |c_builder| %>
-			<% c_builder.text_field :post_categories_attributes_0_name %>
+		<%= f.fields_for :post_categories_attributes_0_name do |c_builder| %>
+			<% c_builder.text_field :name %>
 		<% end %>
 
 	</div>
