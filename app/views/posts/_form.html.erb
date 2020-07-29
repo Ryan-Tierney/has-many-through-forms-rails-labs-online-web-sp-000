@@ -16,14 +16,14 @@
 		<!-- Build Check boxes for Existing Categories -->
 		<%= f.collection_check_boxes(:category_ids, Category.all, :id, :name) do |b| %>
 			<div>
-				<%= b.label%>
+				<%= b.label %>
 				<%= b.check_box %>
 			</div>
 		<% end %>
 
 		<!-- Add a form for a New Category -->
 		<%= f.fields_for :categories do |c_builder| %>
-			<% c_builder.text_field :name %>
+			<% c_builder.text_field :post_categories_attributes_0_name %>
 		<% end %>
 
 	</div>
